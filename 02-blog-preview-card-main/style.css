@@ -1,0 +1,90 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+/* CSS Resetting */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--yellow);
+}
+
+article {
+    max-width: 20rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 1.125rem;
+    border: 1px solid var(--gray-950);
+}
+
+img {
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.course-type {
+    display: block;
+    width: fit-content;
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 0.5em 1.125em;
+    margin-bottom: 0.75rem;
+}
+
+ span + p{
+    font-size: 0.75rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.125rem;
+}
+
