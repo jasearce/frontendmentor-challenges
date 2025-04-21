@@ -54,14 +54,20 @@ body {
 main {
     min-height: 100vh;
     background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 article {
-    max-width: 20rem;
+    max-width: 55%;
     background-color: var(--white);
     padding: 1.5rem;
     border-radius: 1.125rem;
     border: 1px solid var(--gray-950);
+    margin-bottom: 2rem;
+    box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 1);
 }
 
 img {
@@ -88,6 +94,10 @@ h1 {
     font-weight: 800;
     font-size: 1.125rem;
     margin-bottom: 0.75rem;
+}
+
+h1:hover {
+    color: var(--yellow);
 }
 
 .card-content > p:nth-of-type(1) {
