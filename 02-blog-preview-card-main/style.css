@@ -61,18 +61,20 @@ main {
 }
 
 article {
-    max-width: 55%;
+    max-width: 18rem;
     background-color: var(--white);
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 1.125rem;
     border: 1px solid var(--gray-950);
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 1rem;
     box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 1);
 }
 
 img {
     border-radius: 0.75rem;
     margin-bottom: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .course-type {
@@ -81,18 +83,18 @@ img {
     background-color: var(--yellow);
     color: var(--gray-950);
     font-weight: 800;
-    font-size: 0.75rem;
+    font-size: clamp(.65rem, .6rem + .25vw, .75rem);
     padding: 0.5em 1.125em;
     margin-bottom: 0.75rem;
 }
 
  span + p{
-    font-size: 0.75rem;
+    font-size: clamp(.65rem, .6rem + .25vw, 0.75em);
 }
 
 h1 {
     font-weight: 800;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, .95rem + .25vw, 1.125rem);
     margin-bottom: 0.75rem;
 }
 
@@ -107,7 +109,7 @@ h1:hover {
 
 .card-content > p:nth-of-type(2) {
     color: var(--gray-500);
-    font-size: .85rem;
+    font-size: clamp(.75rem, .7rem + .25vw, .85rem);
     margin-bottom: 1.25rem;
 }
 
@@ -121,11 +123,11 @@ h1:hover {
 
 .avatar-container > img {
     width: 12%;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .avatar-container > span {
-    font-size: 0.9rem;
+    font-size: clamp(.8rem, .75rem + .25vw, 0.9rem);
     font-weight: 800;
 }
 
