@@ -1,0 +1,67 @@
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 800;
+    src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+
+
+/* CSS Resetting */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-size: .875rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
