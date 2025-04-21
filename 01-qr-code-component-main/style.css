@@ -1,0 +1,130 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --font-size-paragraph: 15px;
+}
+
+/* CSS Reset*/
+*
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+
+/*Custom CSS for Challenge*/
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--slate-300);
+    min-height: 100vh;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    max-width: 18rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.75rem;
+}
+
+h3 {
+    font-weight: 700;
+    color: var(--slate-900);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: var(--font-size-paragraph);
+    color: var(--slate-500);
+    text-align: center;
+}
