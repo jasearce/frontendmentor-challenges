@@ -9,13 +9,13 @@
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Inter Extra Bold';
     font-weight: 800;
     src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Inter Bold';
     font-weight: 700;
     src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
 }
@@ -25,8 +25,6 @@
     font-weight: 400;
     src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
 }
-
-
 
 /* CSS Resetting */
 *, *::after, *::before {
@@ -64,4 +62,95 @@ h4,
 h5,
 h6 {
     text-wrap: balance;
+}
+
+/* Custom CSS*/
+body {
+    background-color: var(--grey-900);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+span,
+a {
+    display: block;
+}
+
+.attribution > a {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+article {
+    width: 100%;
+    max-width: 16rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-800);
+    padding: 1.5rem;
+    gap: .75rem;
+}
+
+img {
+    max-width: 40%; /*should adjust from 30% to 40%*/
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: .875rem;
+}
+
+h3 {
+    font-family: 'Inter Bold', sans-serif; /*should change to Extra Bold*/
+}
+
+.user-info > span {
+    color: var(--green);
+    font-family: 'Inter Bold', sans-serif;
+    font-size: .67em;
+}
+
+p {
+    font-size: .625rem;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.social > a {
+    background-color: var(--grey-700);
+    color: var(--white);
+    font-size: .625rem;
+    font-family: 'Inter Bold';
+    text-align: center;
+    border-radius: .5rem;
+    padding: .5rem 0;
+}
+
+.social > a:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
 }
