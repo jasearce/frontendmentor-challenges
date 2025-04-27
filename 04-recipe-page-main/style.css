@@ -26,3 +26,96 @@
     font-family: 'Outfit';
     src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format(truetype);
 }
+
+body {
+    font-family: 'Outfit';
+    font-size: var(--fs-body-base);
+    color: var(--stone-600);
+    background-color: var(--white);
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Mobile Approach First */
+article {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif';
+    margin-bottom: 1.125rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: var(--stone-900);
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--brown-800);
+}
+
+section {
+    margin-bottom: 1.75rem;
+}
+
+.recipe-container {
+    padding: 2rem;
+}
+
+.recipe-container p {
+    margin-bottom: 1.5rem;
+}
+
+.prep-time {
+    background-color: var(--rose-50);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.prep-time > h2 {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--rose-800);
+    margin-bottom: .25rem;
+}
+
+section ul,
+section ol {
+    padding: 0 1.25rem;
+}
+
+li {
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+th {
+    font-weight: 400;
+}
+
+td > strong {
+    color: var(--brown-800);
+}
+
+hr {
+    font-weight: 400;
+    color: var(--stone-150);
+    margin-bottom: 1.5rem;
+}
+
+section > h2 + p {
+    width: 98%;
+}
+
+table {
+    width: 100%;
+}
