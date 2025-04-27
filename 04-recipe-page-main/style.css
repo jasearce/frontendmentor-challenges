@@ -28,7 +28,7 @@
 }
 
 body {
-    font-family: 'Outfit';
+    font-family: 'Outfit', sans-serif;
     font-size: var(--fs-body-base);
     color: var(--stone-600);
     background-color: var(--white);
@@ -47,7 +47,7 @@ img {
 
 h1,
 h2 {
-    font-family: 'Young Serif';
+    font-family: 'Young Serif', sans-serif;
     margin-bottom: 1.125rem;
 }
 
@@ -66,6 +66,10 @@ section {
     margin-bottom: 1.75rem;
 }
 
+section:last-child {
+    margin-bottom: 0;
+}
+
 .recipe-container {
     padding: 2rem;
 }
@@ -81,9 +85,9 @@ section {
 }
 
 .prep-time > h2 {
-    font-family: 'Outfit';
+    font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: var(--rose-800);
     margin-bottom: .25rem;
 }
@@ -91,6 +95,11 @@ section {
 section ul,
 section ol {
     padding: 0 1.25rem;
+}
+
+ol li::marker {
+    color: var(--brown-800);
+    font-weight: 600;
 }
 
 li {
@@ -118,4 +127,31 @@ section > h2 + p {
 
 table {
     width: 100%;
+    border-collapse: collapse;
 }
+
+tr {
+    text-align: left;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+tr:first-child td, 
+tr:first-child th{
+    padding-top: 0;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td,
+th {
+    padding-left: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+td {
+    padding-right: 2rem;
+}
+
