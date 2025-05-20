@@ -156,3 +156,26 @@ td {
 }
 
 /* Add media queries for larger screens*/
+@media only screen and (min-width: 540px) {
+    body {
+        background-color: var(--stone-100);
+    }
+    article {
+        width: 690px;
+        background-color: var(--white);
+        border-radius: 1.5rem;
+        padding: 2rem;
+    }
+    main { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        border-radius: .5rem;
+    }
+    .recipe-container {
+        padding: 2rem 0;
+    }
+}
